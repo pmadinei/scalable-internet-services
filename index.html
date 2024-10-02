@@ -3,30 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Web Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-    </style>
+    <title>Static Web Page Project</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Static Web Page</h1>
-        <p>This is a simple static web page hosted on GitHub Pages.</p>
-        <p>It's part of a course project to build, deploy, and load test a static website.</p>
-    </div>
+    <header>
+        <h1>Static Web Page Project</h1>
+    </header>
+    <main>
+        <img src="placeholder-image.jpg" alt="Placeholder image" width="300" height="200">
+        <h2>Project Components</h2>
+        <ul>
+            <li>Valid HTML5</li>
+            <li>Valid CSS</li>
+            <li>External stylesheet</li>
+        </ul>
+        <h2>Performance Data</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Concurrency</th>
+                    <th>Requests/10s</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>TBD</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Project Questions</h2>
+        <ol>
+            <li>
+                <p><strong>Question:</strong> On average, how many requests can `ab` complete in 10 seconds with all the power of two concurrency levels between 1 and 256?</p>
+                <p><strong>Answer:</strong> [Your answer here]</p>
+            </li>
+            <li>
+                <p><strong>Question:</strong> Why are there diminishing returns at higher concurrency levels?</p>
+                <p><strong>Answer:</strong> [Your answer here]</p>
+            </li>
+            <li>
+                <p><strong>Question:</strong> What's the performance difference when requesting HTTP and HTTPS?</p>
+                <p><strong>Answer:</strong> [Your answer here]</p>
+            </li>
+            <li>
+                <p><strong>Question:</strong> How can GitHub respond so quickly?</p>
+                <p><strong>Answer:</strong> [Your answer here]</p>
+            </li>
+            <li>
+                <p><strong>Question:</strong> What is your site's "Total Blocking Time" (TBT) according to PageSpeed Insights?</p>
+                <p><strong>Answer:</strong> [Your answer here]</p>
+            </li>
+        </ol>
+    </main>
+    <footer>
+        <p>View the <a href="https://github.com/yourusername/your-repo-name">source code on GitHub</a>.</p>
+    </footer>
 </body>
 </html>
