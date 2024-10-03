@@ -29,39 +29,39 @@
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>247</td>
+                    <td>76</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>444</td>
+                    <td>141</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>886</td>
+                    <td>293</td>
                 </tr>
                 <tr>
                     <td>8</td>
-                    <td>1922</td>
+                    <td>514</td>
                 </tr>
                 <tr>
                     <td>16</td>
-                    <td>3113</td>
+                    <td>971</td>
                 </tr>
                 <tr>
                     <td>32</td>
-                    <td>3894</td>
+                    <td>1474</td>
                 </tr>
                 <tr>
                     <td>64</td>
-                    <td>4313</td>
+                    <td>2601</td>
                 </tr>
                 <tr>
                     <td>128</td>
-                    <td>4927</td>
+                    <td>3235</td>
                 </tr>
                 <tr>
                     <td>256</td>
-                    <td>886</td>
+                    <td>3591</td>
                 </tr>
             </tbody>
         </table>
@@ -69,7 +69,7 @@
         <ol>
             <li>
                 <p><strong>Question:</strong> On average, how many requests can `ab` complete in 10 seconds with all the power of two concurrency levels between 1 and 256?</p>
-                <p><strong>Answer:</strong> Average was approximately 6,411 requests in 10 seconds across all tested concurrency levels.</p>
+                <p><strong>Answer:</strong> Average was approximately 1,433 requests in 10 seconds across all tested concurrency levels.</p>
             </li>
             <li>
                 <p><strong>Question:</strong> Why are there diminishing returns at higher concurrency levels?</p>
@@ -77,15 +77,15 @@
             </li>
             <li>
                 <p><strong>Question:</strong> What's the performance difference when requesting HTTP and HTTPS?</p>
-                <p><strong>Answer:</strong> In my test, HTTPS requests were about 5% slower than HTTP requests. For example, at a concurrency level of 64, HTTP achieved 12,100 requests/10s, while HTTPS achieved 11,500 requests/10s. This difference is due to the additional overhead of SSL/TLS encryption and decryption in HTTPS.</p>
+                <p><strong>Answer:</strong> In my test, HTTPS requests were about 60% slower than HTTP requests. For example, at a concurrency level of 64, HTTP achieved 6,973 requests/10s, while HTTPS achieved 2,601 requests/10s. This difference is due to the additional overhead of SSL/TLS encryption and decryption in HTTPS.</p>
             </li>
             <li>
                 <p><strong>Question:</strong> How can GitHub respond so quickly?</p>
-                <p><strong>Answer:</strong> Because it serves static content through a global CDN (Content Delivery Network). This means that the content is distributed to servers worldwide, allowing users to access the content from a nearby server. Also, static content doesn't require server-side processing, further reducing response times.</p>
+                <p><strong>Answer:</strong> Because it serves static content through a global CDN. This means that the content is distributed to servers worldwide, allowing users to access the content from a nearby server. Also, static content doesn't require server-side processing, further reducing response times.</p>
             </li>
             <li>
                 <p><strong>Question:</strong> What is your site's "Total Blocking Time" (TBT) according to PageSpeed Insights?</p>
-                <p><strong>Answer:</strong> I observed TBT to be 0 ms! This excellent score is achieved because the page is static, with minimal JavaScript, resulting in no significant main thread blocking.</p>
+                <p><strong>Answer:</strong> I observed TBT to be 0 ms! This is because the page is static, with minimal JavaScript, resulting in no significant main thread blocking.</p>
             </li>
         </ol>
     </main>
