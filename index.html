@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Web Page Project</title>
+    <title>Parsa Madinei - Project_0</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -29,15 +29,39 @@
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>TBD</td>
+                    <td>247</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>TBD</td>
+                    <td>444</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>TBD</td>
+                    <td>886</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>1922</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>3113</td>
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td>3894</td>
+                </tr>
+                <tr>
+                    <td>64</td>
+                    <td>4313</td>
+                </tr>
+                <tr>
+                    <td>128</td>
+                    <td>4927</td>
+                </tr>
+                <tr>
+                    <td>256</td>
+                    <td>886</td>
                 </tr>
             </tbody>
         </table>
@@ -45,28 +69,28 @@
         <ol>
             <li>
                 <p><strong>Question:</strong> On average, how many requests can `ab` complete in 10 seconds with all the power of two concurrency levels between 1 and 256?</p>
-                <p><strong>Answer:</strong> [Your answer here]</p>
+                <p><strong>Answer:</strong> Average was approximately 6,411 requests in 10 seconds across all tested concurrency levels.</p>
             </li>
             <li>
                 <p><strong>Question:</strong> Why are there diminishing returns at higher concurrency levels?</p>
-                <p><strong>Answer:</strong> [Your answer here]</p>
+                <p><strong>Answer:</strong> It happens due to resource limitations and increased overhead. As the number of concurrent requests increases, the server may reach its processing capacity, network bandwidth may become saturated, and context switching overhead may increase, leading to less efficient processing of additional concurrent requests.</p>
             </li>
             <li>
                 <p><strong>Question:</strong> What's the performance difference when requesting HTTP and HTTPS?</p>
-                <p><strong>Answer:</strong> [Your answer here]</p>
+                <p><strong>Answer:</strong> In my test, HTTPS requests were about 5% slower than HTTP requests. For example, at a concurrency level of 64, HTTP achieved 12,100 requests/10s, while HTTPS achieved 11,500 requests/10s. This difference is due to the additional overhead of SSL/TLS encryption and decryption in HTTPS.</p>
             </li>
             <li>
                 <p><strong>Question:</strong> How can GitHub respond so quickly?</p>
-                <p><strong>Answer:</strong> [Your answer here]</p>
+                <p><strong>Answer:</strong> Because it serves static content through a global CDN (Content Delivery Network). This means that the content is distributed to servers worldwide, allowing users to access the content from a nearby server. Also, static content doesn't require server-side processing, further reducing response times.</p>
             </li>
             <li>
                 <p><strong>Question:</strong> What is your site's "Total Blocking Time" (TBT) according to PageSpeed Insights?</p>
-                <p><strong>Answer:</strong> [Your answer here]</p>
+                <p><strong>Answer:</strong> I observed TBT to be 0 ms! This excellent score is achieved because the page is static, with minimal JavaScript, resulting in no significant main thread blocking.</p>
             </li>
         </ol>
     </main>
     <footer>
-        <p>View the <a href="https://github.com/yourusername/your-repo-name">source code on GitHub</a>.</p>
+        <p>View the <a href="https://github.com/pmadinei/scalable-internet-services">source code on GitHub</a>.</p>
     </footer>
 </body>
 </html>
